@@ -1,0 +1,1139 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-image: url(foot1.jpeg);
+  color: #333;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  text-align: center;
+  background-color: #e47022;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Navigation Styles */
+aside {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #df6b28;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+/* Routes Styling */
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page Styles */
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.home-page h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Product Management, User Management, and Stock Management Pages */
+.management-page {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Footer (if any) */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .nav-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .management-page {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .container {
+      padding: 10px;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Container for Dashboard Section */
+section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Chart Container */
+div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #be780e;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Status Indicators (Stock Level and Sold Products) */
+td:nth-child(4), td:nth-child(5) {
+  font-weight: bold;
+  text-align: center;
+}
+
+td:nth-child(4) {
+  color: #e74c3c; /* Red for low stock */
+}
+
+td:nth-child(4).available {
+  color: #2ecc71; /* Green for available stock */
+}
+
+td:nth-child(5) {
+  color: #f39c12; /* Yellow for sold stock */
+}
+
+/* Transaction Table Styles */
+table.transaction-history {
+  margin-top: 50px;
+}
+
+.transaction-history th {
+  background-color: #3498db;
+}
+
+.transaction-history td {
+  background-color: #ecf0f1;
+}
+
+.transaction-history td:last-child {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Stock Action Indicator (Add/Deduct) */
+.transaction-action.add {
+  color: #c47c1f; /* Green for added stock */
+  font-weight: bold;
+}
+
+.transaction-action.deduct {
+  color: #ec780cc7; /* Red for deducted stock */
+  font-weight: bold;
+}
+
+/* Total Stock Value */
+h3.total-stock-value {
+  color: #2ecc71;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 95%;
+      padding: 15px;
+  }
+
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 8px 10px;
+  }
+
+  h2, h3 {
+      font-size: 1.8em;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Home Page Styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home h1 {
+  font-size: 2.5em;
+  color: #ec780cc7;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Image Styling */
+.home img {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Second Heading */
+.home h1:last-child {
+  font-size: 2.2em;
+  color: #333;
+  font-weight: normal;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+      font-size: 2em;
+  }
+
+  .home img {
+      width: 90%;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Product List Section */
+section {
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #ec780cc7;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Actions Button */
+button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Edit Form Styles */
+form {
+  width: 100%;                                                                                                                                                                                                                                                                                                                                                      
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  border-color: #d37d0d;
+  outline: none;
+  background-color: #ffffff;
+}
+
+button[type="submit"] {
+  background-color: #ee9105ab;
+  margin-top: 20px;
+}
+
+button[type="button"] {
+  background-color: #e74c3c;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 95%;
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  table {
+      font-size: 14px;
+  }
+
+  th, td {
+      padding: 8px 10px;
+  }
+
+  form {
+      width: 100%;
+      padding: 15px;
+  }
+
+  input {
+      padding: 8px;
+      font-size: 1em;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f970;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Product Management Section */
+section {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #191a19;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  input {
+      padding: 8px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 1.1em;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Stock List Section */
+section {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4caf4f6e;
+  color: white;
+  font-size: 1.1em;
+}
+
+td {
+  font-size: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #d65c0b;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Stock Level Styling */
+td:nth-child(3) {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+td:nth-child(3):contains('Available') {
+  color: #27ae60;
+}
+
+td:nth-child(3):contains('Low Stock') {
+  color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  th, td {
+      padding: 10px;
+  }
+
+  table {
+      font-size: 0.9em;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Stock Management Section */
+section {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+select, input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;  /* Hide the number spinner in Chrome/Safari */
+  -moz-appearance: textfield;  /* Hide the number spinner in Firefox */
+  appearance: none;  /* Standard approach for other browsers */
+  
+  /* Additional styles to make sure the input looks uniform */
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;  /* Full width */
+  box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Remove spin buttons in WebKit browsers */
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  border-color: #4CAF50;  /* Border color on focus */
+  outline: none; /* Remove outline */
+}
+
+
+select:focus, input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* View Stock Button */
+button[type="button"] {
+  background-color: #3498db;
+  margin-top: 20px;
+  width: auto;
+}
+
+button[type="button"]:hover {
+  background-color: #2980b9;
+}
+
+/* Input Highlight on Error */
+input.error, select.error {
+  border-color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  select, input {
+      font-size: 1em;
+  }
+
+  button {
+      font-size: 1em;
+  }
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  color: #333;
+  font-size: 16px;
+}
+
+/* User List Section */
+section {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table button {
+  padding: 8px 15px;
+  font-size: 1em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 5px;
+}
+
+table button:hover {
+  background-color: #2980b9;
+}
+
+table button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Edit Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form button[type="button"] {
+  background-color: #e74c3c;
+}
+
+form button[type="button"]:hover {
+  background-color: #c0392b;
+}
+
+/* Error Messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  table {
+      font-size: 0.9em;
+  }
+
+  table button {
+      font-size: 0.9em;
+  }
+
+  form input, form button {
+      font-size: 1em;
+  }
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-size: 16px;
+}
+
+/* User Management Section */
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1.2em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 2em;
+  }
+
+  form input, form button {
+      font-size: 1em;
+  }
+}
